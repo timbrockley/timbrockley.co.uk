@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+<script>
+var chunk=window.location.href.substring(window.location.href.lastIndexOf("/")+1);
+chunk=chunk.replace('.php','');
+
+switch(chunk)
+{
+    case 'cosplay':
+        chunk='cosplay-photography.html'
+        break;
+
+    case 'cosplay-photography':
+        chunk='cosplay-photography.html'
+        break;
+
+    case 'street':
+        chunk='street-photography.html'
+        break;
+
+    case 'street-photography':
+        chunk='street-photography.html'
+        break;
+
+    case 'portraits':
+        chunk='street-portraits.html'
+        break;
+
+    case 'street-portraits':
+        chunk='street-portraits.html'
+        break;
+
+    case 'prices':
+        chunk='prices.html'
+        break;
+
+    case 'terms':
+        chunk='terms.html'
+        break;
+
+    case 'tandcs':
+        chunk='tandcs.html'
+        break;
+
+    case 'terms':
+        chunk='terms.html'
+        break;
+
+    default:
+        chunk='';
+}
+
+var url='https://www.timbrockley.co.uk/'+chunk;
+window.location.href=url;
+
+document.write(url);
+
+</script>
+
+<title>Tim Brockley Photography</title>
+
+<link rel="canonical" href="https://www.timbrockley.co.uk/">
+
+<meta http-equiv="REFRESH" content="0; URL=https://www.timbrockley.co.uk/">
+
+</head>
+<body>
+
+<h3>Tim Brockley Photography</h3>
+
+<a href="https://www.timbrockley.co.uk/">https://www.timbrockley.co.uk/</a>
+
+</body>
+</html>
+
