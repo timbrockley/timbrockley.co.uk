@@ -5,6 +5,14 @@
 <script>
 var chunk=window.location.href.substring(window.location.href.lastIndexOf("/")+1);
 chunk=chunk.replace('.php','');
+chunk=chunk.replace('.html','');
+//console.log(chunk);
+
+if((chunk==='' || chunk==='index') && window.location.pathname.split('/').length>2)
+{
+    var chunk=window.location.pathname.substring(window.location.pathname.indexOf('/')+1,window.location.pathname.lastIndexOf('/'));
+    chunk=chunk.substring(chunk.lastIndexOf('/')+1);
+}
 
 switch(chunk)
 {
@@ -46,12 +54,12 @@ switch(chunk)
 
     default:
         chunk='';
+
 }
 
 var url='https://www.timbrockley.co.uk/'+chunk;
+//console.log(url);
 window.location.href=url;
-
-document.write(url);
 
 </script>
 
@@ -59,7 +67,7 @@ document.write(url);
 
 <link rel="canonical" href="https://www.timbrockley.co.uk/">
 
-<meta http-equiv="REFRESH" content="0; URL=https://www.timbrockley.co.uk/">
+<!-- <meta http-equiv="REFRESH" content="0; URL=https://www.timbrockley.co.uk/"> -->
 
 </head>
 <body>
